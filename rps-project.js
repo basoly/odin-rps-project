@@ -1,13 +1,13 @@
+function random(number) {
+    //number between 0 and specified index number
+    return Math.floor(Math.random() * number);
+}
+
 function getComputerChoice() {
     let options = ['Rock', 'Paper', 'Scissors'];
     let computerChoice = options[random(2)];
     // use Math.random.floor * 2 to choose number from 0 to choose index of array
     return computerChoice
-}
-
-function random(number) {
-    //number between 0 and specified index number
-    return Math.floor(Math.random() * number);
 }
 
 function playGame(playerSelection) {
@@ -56,6 +56,13 @@ function playGame(playerSelection) {
 
 function game() {
     // Loop 5 rounds
+    alert('Start of Game')
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt();
+        playGame(); 
+    }
+
+
     // use prompt() to prompt player for choice
     // sanitize user input by making all lowercase
     // previous functions go here
