@@ -1,14 +1,54 @@
 function getComputerChoice() {
     let options = ['Rock', 'Paper', 'Scissors'];
-    // use Math.random.floor * 3 to choose number from 0 to choose random inde
-
+    let computerChoice = options[random(2)];
+    // use Math.random.floor * 2 to choose number from 0 to choose index of array
+    return computerChoice
 }
 
-function playGame(playerSelection, computerSection) {
+function random(number) {
+    //number between 0 and specified index number
+    return Math.floor(Math.random() * number);
+}
+
+function playGame(playerSelection) {
     //function for single round of RPS
-    playerChoice = getPlayerChoice();
-    computerChoice = getComputerChoice();
+
+    // playerChoice = getPlayerChoice();
+
+    computerSelection = getComputerChoice(); // get computer choice
+
     // conditionals: choice evaluation
+    //switch statement with different cases
+
+    switch(playerSelection) {
+        case 'rock':
+            if (computerSelection == 'scissors') {
+            console.log(`You win. ${playerSelection} beats ${computerSelection}!`);
+            break;
+            }
+            
+        case 'paper':
+            if (computerSelection == 'rock') {
+                console.log(`You win. ${playerSelection} beats ${computerSelection}!`);
+                break;
+            }
+            
+        case 'scissors':
+            if (computerSelection == 'paper') {
+                console.log(`You win. ${playerSelection} beats ${computerSelection}`);
+                break;
+            }
+            
+        case computerSelection:
+            console.log(`It's a tie. The player chose ${playerSelection} and the computer chose ${computerSelection}`);
+            break;
+        
+        default:
+            console.log(`You lose. ${computerSelection} beats ${playerSelection} (your option)`)
+            break;
+
+    }
+    
     // if player has winning choice (playerchoice == winning choice)
     // print You win. {choice} beats {choice}.
 
