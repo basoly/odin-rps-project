@@ -23,7 +23,7 @@ function playGame(playerSelection) {
     switch(playerSelection) {
         case 'rock':
             if (computerSelection == 'scissors') {
-            console.log(`You win. ${playerSelection} beats ${computerSelection}!`);
+                console.log(`You win. ${playerSelection} beats ${computerSelection}!`);
             break;
             }
             
