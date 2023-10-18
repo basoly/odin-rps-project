@@ -9,9 +9,9 @@ function getComputerChoice() {
 }
 
 function playGame(playerSelection) {
-    const validOptions = ["rock", "paper", "scissors"]
-    if (!(validOptions.includes(playerSelection.toLowerCase))) {
-        "Invalid input. Please try again"
+    const validOptions = ["rock", "paper", "scissors"];
+    if (!(validOptions.includes(playerSelection.toLowerCase()))) {
+        console.log("Invalid input. Please try again");
         let result = "invalid input"
         return result
     }
