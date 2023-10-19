@@ -1,0 +1,53 @@
+.heading {
+    font-weight: bold;
+    text-align: center;
+}
+
+#head1 {
+    font-size: 36px;
+}
+
+#head2 {
+    font-size: 24px;
+}
+
+.btn {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    font-size: 30px;
+    display: inline-block;
+}
+
+#container {
+    text-align: center;
+}
+
+.result {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+}
+
+.score {
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+#final-result {
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: red;
+    color: white;
+}
+
+#reset {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    font-size: 30px;
+    display: inline-block;
+}
